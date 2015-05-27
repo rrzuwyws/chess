@@ -1,0 +1,28 @@
+﻿<Window x:Class="chess.gui.pawnDialogue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="pawnDialogue" Height="300" Width="300" MinWidth="300" MinHeight="300" MaxWidth="300" MaxHeight="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Closing="Window_Closing">
+    <Grid x:Name="myGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="TitleLabel" Content="Select piece to transform" Grid.Column="0" HorizontalAlignment="Center" 
+               VerticalAlignment="Center" Grid.ColumnSpan="4" Width="150" TextBlock.TextAlignment="Center"/>
+        <Button x:Name="Bishop" Content="Bishop" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Center" 
+                VerticalAlignment="Center" HorizontalContentAlignment="Center" Click="Button_Click"/>
+        <Button x:Name="Knight" Content="Knight" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Center" 
+                VerticalAlignment="Center" HorizontalContentAlignment="Center" Click="Button_Click"/>
+        <Button x:Name="Rook" Content="Rook" Grid.Column="2" Grid.Row="2"  HorizontalAlignment="Center" 
+                VerticalAlignment="Center" HorizontalContentAlignment="Center" Click="Button_Click"/>
+        <Button x:Name="Queen" Content="Queen" Grid.Column="3" Grid.Row="2"  HorizontalAlignment="Center" 
+                VerticalAlignment="Center" HorizontalContentAlignment="Center" Click="Button_Click"/>
+    </Grid>
+</Window>
